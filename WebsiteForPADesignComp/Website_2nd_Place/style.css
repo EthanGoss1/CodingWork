@@ -1,0 +1,95 @@
+/* Add a black background color to the top navigation bar */
+.topnav
+{
+  overflow: hidden;
+  background-color: teal;
+
+}
+
+/* Adds a color to link when hovered over */
+.topnav a:hover{
+  background-color: white
+}  
+/* Style the links inside the navigation bar */
+topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: double;
+  font-size: 17px;
+}
+
+/* Centers an image.*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+td.description {
+  min-width: 450px;
+  max-width: 650px;
+  text-align: left;
+  padding: 5px;
+  margin: 0px;}
+
+/* Various borders for use */
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+product {
+  border-style: ridge;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-color: teal;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+img {
+  border-style: solid;
+  border-width: 5px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-color: teal;
+}
+
+.vl {
+  border-left: teal;
+  height: 500px;
+}
+
+hyperlink_border {
+  border-style: solid;
+  border-width: 5px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-color: teal;
+}

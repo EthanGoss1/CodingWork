@@ -1,0 +1,17 @@
+To start, I "appropriated" all of the code that had to deal with decision trees from the AIPython folder.
+Then, after downloading the data and converting it into a csv file, I cleaned the data by removing
+the ID column so then the model wouldn't train based on the IDs. I also turned off one hot encoding so it doesn't
+train a whole bunch of extra features, as the first time I ran it, it started training 160,000+ features and took forever.
+All the non-binary variables had been one-hot encoded rather than doing simple boolean equality tests, so to avoid this
+problem I turned off one-hot encoding and had it do equality tests, like classification trees with a true and a false value in 7.3.1.
+The train test split is 80-20. While running it, it gave me an error at how it was parsing the headers of the
+csv, so I had to go into learnProblem and change a line so that error wouldn't occur (line 91).
+I've chosen log_loss, as log loss measures the uncertainty of the model's predictions by
+punishing it heavily for being confident and wrong about whether a borrower will default.
+By minimizing this loss at each split, the decision tree can identify the most informative features
+to create groups that are as good as possible. I've set max number of cuts  to 10 because by limiting numeric variables to
+10 split points, the model must generalize more. It prevents the tree from finding tiny "pockets" of data that don't
+represent the larger points of the data. I also set min child weight to 20 because this helps stop overfitting. The
+model must find at least 20 samples that fit this portion of the tree, which helps stop mapping too many outliers. I set
+gamma (absolute minimum improvement threshold) to 1%. This means that if the split doesn't reduce the tree's loss by at
+least 1%, then the tree won't split there. Overall, I got an accuracy average of about ~81%.
