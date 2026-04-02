@@ -1,4 +1,4 @@
-This is a simple repo of a few of my various coding projects/work
+This is a simple repo of a few of my various coding projects and work
 that I've completed. In the Classwork folder is a few projects that
 I've completed for my various Computer Science courses. The
 Website for the PA Media and Design competition that I participated
